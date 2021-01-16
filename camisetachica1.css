@@ -1,0 +1,258 @@
+body{
+font-family:"Arial";
+background-color:white;
+}
+
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border: 1px solid rgba(0,0,0,0.6);
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+img.camiseta1{
+height:900px;
+width:750px;
+}
+img.camiseta17{
+	height:900px;
+	width:650px;
+}
+
+img.mickey{
+	height:900px;
+	width:700px;
+}
+	
+
+img.novedades1{
+	height:70px;
+	width:70px;
+}
+
+img.novedades2{
+	height:70px;
+	width:70px;
+}
+
+h1.hone{
+color:black;
+text-align:center;
+font-family:"Arial";
+text-align:center;
+}
+
+div.camiseta1{
+	margin-right:180px;
+	margin-top:-30px;
+}
+
+div.comprar{
+	margin-left:155px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color:rgba(0, 0, 0, 0.6);
+  font-size:17;
+  padding: 0px 0px;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+.links{
+color:white;
+}
+
+div.lohso{
+	background-color:  rgba(0, 0, 0, 0.3);
+	width:170px;
+}
+
+div.lohso a:hover{
+	background-color:rgba(0, 0, 0, 0);
+}
+	
+div.everything{
+	margin-left:0px;
+}
+
+li a:hover.lohso{
+	background-color:rgba(0, 0, 0, 0.6);
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 5px;
+  text-decoration: none;
+  font-size: 17;
+
+}
+
+h3.lohso{
+	margin-left:30px;
+}
+
+.gg-comment {
+ box-sizing: border-box;
+ position: relative;
+ display: block;
+ transform: scale(var(--ggs,1));
+ width: 20px;
+ height: 16px;
+ border: 2px solid;
+ border-bottom: 0;
+ margin-left:150px;
+ box-shadow:
+ -6px 8px 0 -6px,
+ 6px 8px 0 -6px
+}
+.gg-comment:hover {
+ box-sizing: border-box;
+ position: relative;
+ display: block;
+ transform: scale(var(--ggs,1));
+ width: 20px;
+ height: 16px;
+ border: 2px solid;
+ border-bottom: 0;
+ margin-left:150px;
+ box-shadow:
+ -6px 8px 0 -6px,
+ 6px 8px 0 -6px
+}
+
+.icono:hover {
+   background-color: rgba(0, 0, 0, 0.17);
+   height:90px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color:  rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0px 0;
+  position: absolute;
+  z-index: 1;
+  margin-left:-55px;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+
+
+.gg-comment::after,
+.gg-comment::before {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute;
+ width: 8px
+}
+
+.gg-comment::before {
+ border: 2px solid;
+ border-top-color: transparent;
+ border-bottom-left-radius: 20px;
+ right: 4px;
+ bottom: -6px;
+ height: 6px
+}
+
+.gg-comment::after {
+ height: 2px;
+ background: currentColor;
+ box-shadow: 0 4px 0 0;
+ left: 4px;
+ top: 4px
+} 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+ background-color:hsla(213, 46%, 100%, 0.1)
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: background-color:hsla(213, 46%, 100%, 0.1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:background-color:hsla(213, 46%, 100%, 0.1);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color:rgba(0, 0, 0, 0.6);
+  color:white;
+}
