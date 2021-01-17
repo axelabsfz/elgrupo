@@ -1,0 +1,105 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+<style>
+.error ?color: #FF0000;
+•</style>
+
+
+</head>
+<body> <?php
+// definen variables y establecen en valores
+vacíos$nameErr $emailErr - $genderErr - $websiteErr ";
+$name de $email - $gender - $comment - $website ";
+
+
+
+if ( $_SERVER [ "REQUEST_METHOD" ] á "POST" ) , if ( vacío ( $_POST [ "nombre" ])) , $nameErr "Nombre es necesario" ;
+else
+á $name á test_input($_POST["name"]);
+// comprobar si el nombre
+sólo contiene letras y espacios en blanco si (!preg_match("/-[a-zA-Z-' ]*$/",$name)) -
+$nameErr "Sólo las letras y el espacio en blanco permitidos";
+
+
+•
+si ( vacío ($_POST["email"]))
+? $emailErr "Se requiere correo electrónico";
+otra
+$email - test_input($_POST["email"]);
+// comprobar si la dirección de
+correo electrónico está bien formada si (!filter_var($email,
+FILTER_VALIDATE_EMAIL)) ? $emailErr -"Formato de correo electrónico no válido";
+
+
+•
+si (vacío($_POST["sitio web"]))
+-
+$website "; otra
+$website - test_input($_POST["website"]);
+// compruebe si la sintaxis de la dirección URL es
+válida (esta expresión regular también permite guiones en la dirección URL) si (!preg_match("/?b(?:(?:https?? ftp://-www.) [-a-z0-9+&/%??_______________________ *[[-a-z0-9+&/%-_] /i",$website)) ?
+$websiteErr " URL no válida";
+
+
+•
+si ( vacío ($_POST["comentario"]))
+?
+$comment "; otra
+$comment á test_input($_POST["comentario"]);
+
+
+
+si ( vacío ( $_POST [ "género" ])) - $genderErr " Género es necesario" ;
+otra
+$gender de test_input ($_POST["género"]);
+
+•
+
+
+
+
+test_input de la función ($data) - $data - trim($data); $data - stripslashes($data); $data - htmlspecialchars($data);
+$data de retorno; ?
+?>< h2 > Ejemplo de validación de formularios PHP < /h2 > < p > < span class ?"error" > * campo requerido < /span > < /p > < método de formulario ?"post" action ?" <?echo php htmlspecialchars( $_SERVER PHP_SELF
+
+
+[
+
+>">
+Nombre: <tipo de entrada "texto" nombre"nombre" valor""lt;?php echo $name;? >">
+<clase de span "error">* <?php echo $nameErr;? ></span>
+<br><br>
+E-mail: <tipo de entrada "texto" nombre"email" valor""lt;?php echo $email;? >">
+<clase de span "error">* <?php echo $emailErr;? ></span>
+<br><br>
+Sitio web: <tipo de entrada "texto" nombre"sitio web" <?php echo $website;? >">
+<clase de span "error"><?php echo $websiteErr;? ></span>
+<br><br>
+Comentario: <nombre de área de texto "comentario" filas"5" cols"40"><?php echo $comment;? ></textarea>
+<br><br>
+Género:
+<tipo de entrada "radio" nombre"género" <?php si (isset($gender) && $gender á"mujer") echo "checked";? > valor"hembra">Tipo de entrada y mujer
+> "radio" nombre"género" <?php si (isset($gender) && $gender ""masculino") echo "marcado";? > valor"masculino">Tipo de entrada masculino
+& "radio" nombre"género" <?php si (isset($gender) && $gender ""otro") eco "marcado";? > valor"otro">Otro
+<clase de span "error">* <?php echo $genderErr;? ></span>
+<br>
+<br>
+<tipo de entrada "submit" name?"submit" value?"Submit">
+</form>
+<?php
+
+echo "<h2>Your Input:</h2>"; $name de eco;
+echo "<br>";
+$email de eco;
+echo "<br>";
+$website de eco;
+echo "<br>";
+$comment de eco;
+echo "<br>";
+$gender de eco;
+?>
+
+
+</body>
+</html>

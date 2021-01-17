@@ -1,0 +1,361 @@
+<html>
+<head>
+<style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+
+body{
+font-family:"Arial";
+background-color:white;
+}
+
+.boton{
+margin-left:600px;
+}
+
+
+h1.hone{
+color:black;
+text-align:center;
+font-family:"Arial";
+text-align:center;
+}
+
+h3.wow{
+color:red;
+}
+
+.gg-comment {
+ box-sizing: border-box;
+ position: relative;
+ display: block;
+ transform: scale(var(--ggs,1));
+ width: 20px;
+ height: 16px;
+ border: 2px solid;
+ border-bottom: 0;
+ margin-left:150px;
+ box-shadow:
+ -6px 8px 0 -6px,
+ 6px 8px 0 -6px
+}
+.gg-comment:hover {
+ box-sizing: border-box;
+ position: relative;
+ display: block;
+ transform: scale(var(--ggs,1));
+ width: 20px;
+ height: 16px;
+ border: 2px solid;
+ border-bottom: 0;
+ margin-left:150px;
+ box-shadow:
+ -6px 8px 0 -6px,
+ 6px 8px 0 -6px
+}
+
+.icono:hover {
+   background-color: rgba(0, 0, 0, 0.17);
+   height:90px;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color:  rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0px 0;
+  position: absolute;
+  z-index: 1;
+  margin-left:-55px;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+
+
+.gg-comment::after,
+.gg-comment::before {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute;
+ width: 8px
+}
+
+.gg-comment::before {
+ border: 2px solid;
+ border-top-color: transparent;
+ border-bottom-left-radius: 20px;
+ right: 4px;
+ bottom: -6px;
+ height: 6px
+}
+
+.gg-comment::after {
+ height: 2px;
+ background: currentColor;
+ box-shadow: 0 4px 0 0;
+ left: 4px;
+ top: 4px
+} 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color:rgba(0, 0, 0, 0.6);
+  font-size:17;
+  padding: 0px 0px;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+.links{
+color:white;
+}
+
+div.lohso{
+	background-color:  rgba(0, 0, 0, 0.3);
+	width:170px;
+}
+
+div.lohso a:hover{
+	background-color:rgba(0, 0, 0, 0);
+}
+	
+div.everything{
+	margin-left:0px;
+}
+
+li a:hover.lohso{
+	background-color:rgba(0, 0, 0, 0.6);
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 5px;
+  text-decoration: none;
+  font-size: 17;
+
+}
+
+h3.lohso{
+	margin-left:30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+ background-color:hsla(213, 46%, 100%, 0.1)
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: background-color:hsla(213, 46%, 100%, 0.1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:background-color:hsla(213, 46%, 100%, 0.1);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color:rgba(0, 0, 0, 0.6);
+  color:white;
+}
+</style>
+</head>
+<body>
+
+<h1 class="hone"> LOHSO  </h1>
+ 
+<div class="sticky"><ul>
+ <li class="lohso"><div class="lohso"><a href="#home"><h3 class="lohso">LOHSO</h3></div></a></li>
+  <li><div class="everything"><a href="index.html"><h4>Página principal</h4></a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><h4>Camisetas</h4></a>
+    <div class="dropdown-content">
+      <a href="camisetahombre.html"><p class="links">Hombre</p></a>
+      <a href="camisetamujer.html"><p class="links">Mujer</p></a>
+      <a href="camisetas1.html"><p class="links">Más popular</p></a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><h4>Pantalones</h4></a>
+    <div class="dropdown-content">
+      <a href="pantaloneshombre.html"><p class="links">Hombre</p></a>
+      <a href="pantalonesmujer.html"><p class="links">Mujer</p></a>
+      <a href="pantalones1.html"><p class="links">Más popular</p></a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><h4>Zapatillas</h4></a>
+    <div class="dropdown-content">
+      <a href="zapatillashombre.html"><p class="links">Hombre</p></a>
+      <a href="zapatillasmujer.html"><p class="links">Mujer</p></a>
+      <a href="zapatillas1.html"><p class="links">Más popular</p></a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><h4>Accesorios</h4></a>
+    <div class="dropdown-content">
+       <a href="joyeria.html"><p class="links">Joyería </p></a>
+      <a href="bolsos.html"><p class="links">Bolsos</p></a>
+      <a href="gorros.html"><p class="links">Gorros</p></a>
+    </div>
+  </li>
+  <li><a href="novedades1.html"><h4>Novedades</h4></a></li>
+  <li><a href="#news"><h4>Sobre nosotros</h4></a></li>
+  <li class="icono"><a href="soporte.html"><div class="tooltip"><h4> <i class="gg-comment"></i></h4> <span class="tooltiptext"><h4>Atención al cliente</h4></span></div></a></li>
+</ul></div>
+
+<br>
+<br>
+<h1 class="hone"> Atención al cliente</h1>
+<br>
+
+<form>
+  <label for="fname"><h3 class="wow">Nombre</h3></label>
+  <input type="text" id="fname" name="fname" value="ej.Eduardo">
+  <label for="lname"><h3 class="wow">Apellido</h3></label>
+  <input type="text" id="lname" name="lname" value="ej.Rodríguez">
+   <label for="lname"><h3 class="wow">Correo electrónico</h3></label>
+  <input type="text" id="lname" name="lname" value="ej.albertorodriguez@gmail.com">
+   <label for="lname"><h3 class="wow">¿En qué podemos ayudarte?</h3></label>
+  <input type="text" id="lname" name="lname" value="ej.pregunta">
+</form>
+
+
+<button class="boton" onclick="myFunction()"><h3>Enviar cuestionario</h3></button> <p id="demo"></p>
+
+
+
+<script>
+function myFunction() {
+  var txt;
+  
+  var person = prompt("¿Estás seguro que deseas enviar el cuestionario?", "ej. si");
+  if (person == null || person == "") {
+    txt = "";
+  }
+  else {
+    txt = "¡Enhorabuena! El cuestionario ha sido registrado con éxito. Recibirás una respuesta en el correo proporcionado durante las próximas 48 horas. " ;
+	
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+
+        var mins = 14400; 
+  
+        
+        var secs = mins * 60; 
+  
+        
+        function countdown() { 
+            setTimeout('Decrement()', 60); 
+        } 
+  
+        
+        function Decrement() { 
+            if (document.getElementById) { 
+                minutes = document.getElementById("minutes"); 
+                seconds = document.getElementById("seconds"); 
+  
+               
+                if (seconds < 59) { 
+                    seconds.value = secs; 
+                } 
+  
+                
+                else { 
+                    minutes.value = getminutes(); 
+                    seconds.value = getseconds(); 
+                } 
+                
+                if (mins < 1) { 
+                    minutes.style.color = "red"; 
+                    seconds.style.color = "red"; 
+                } 
+                
+                if (mins < 0) { 
+                    alert('time up'); 
+                    minutes.value = 0; 
+                    seconds.value = 0; 
+                } 
+                
+                else { 
+                    secs--; 
+                    setTimeout('Decrement()', 1000); 
+                } 
+            } 
+        } 
+  
+        function getminutes() { 
+           
+            mins = Math.floor(secs / 60); 
+            return mins; 
+        } 
+  
+        function getseconds() { 
+            
+            return secs - Math.round(mins * 60); 
+        } 
+</script>
+
+</body>
+</html>
