@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>
+</title>
+<link rel="stylesheet" href="camisetachica1.css">
+</head>
+<body onload="countdown();">
+
+<h1 class="hone"> LOHSO  </h1>
+ 
+<div class="sticky"><ul>
+ <li class="lohso"><div class="lohso"><a href="#home"><h3 class="lohso">LOHSO</h3></div></a></li>
+  <li><div class="everything"><a href="index.html"><h4>Página principal</h4></a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><h4>Camisetas</h4></a>
+    <div class="dropdown-content">
+      <a href="camisetahombre.html"><p class="links">Hombre</p></a>
+      <a href="camisetamujer.html"><p class="links">Mujer</p></a>
+      <a href="camisetas1.html"><p class="links">Más popular</p></a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><h4>Pantalones</h4></a>
+    <div class="dropdown-content">
+      <a href="pantaloneshombre.html"><p class="links">Hombre</p></a>
+      <a href="pantalonesmujer.html"><p class="links">Mujer</p></a>
+      <a href="pantalones1.html"><p class="links">Más popular</p></a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><h4>Zapatillas</h4></a>
+    <div class="dropdown-content">
+      <a href="zapatillashombre.html"><p class="links">Hombre</p></a>
+      <a href="zapatillasmujer.html"><p class="links">Mujer</p></a>
+      <a href="zapatillas1.html"><p class="links">Más popular</p></a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><h4>Accesorios</h4></a>
+    <div class="dropdown-content">
+       <a href="joyeria.html"><p class="links">Joyería </p></a>
+      <a href="bolsos.html"><p class="links">Bolsos</p></a>
+      <a href="gorros.html"><p class="links">Gorros</p></a>
+    </div>
+  </li>
+  <li><a href="novedades1.html"><h4>Novedades</h4></a></li>
+  <li><a href="#news"><h4>Sobre nosotros</h4></a></li>
+  <li class="icono"><a href="soporte.html"><div class="tooltip"><h4> <i class="gg-comment"></i></h4> <span class="tooltiptext"><h4>Atención al cliente</h4></span></div></a></li>
+</ul></div>
+
+<br>
+
+<table BORDER=0 WIDTH=100%  cellpadding=0 CELLSPACING=0 align="center">
+<tr>
+<td>
+<img class="camiseta1" src="camiseta11dos.jpg">
+</td>
+<td>
+<div class="camiseta1"><h1>Precio: 19,95€ </h1>
+<h1> Descripción del producto </h1>
+<p>Estilo:	Casual</p>
+<p>Color:	Gris</p>
+<p>Tipo de Estampado:	Frase</p>
+<p>Escote:	cuello redondo</p>
+<p>Largo:	Largo</p>
+<p>Longitud de la Manga:	manga media</p>
+<p>Tipos de Manga:	Hombros caídos</p>
+<p>Temporada:	Verano</p>
+<p>Composición:	100% Algodón</p>
+<p>Material:	Algodón</p>
+<p>Tejido:	Elástico Ligero</p>
+<p>Transparente:	No</p>
+<p>Tipo de ajuste:	ceñido</p>
+<p>Tipo de Cierre-Botonadura:	Jersey</p>
+<h3>Tallas disponibles: S M L XL </h3>
+<h3> Colores disponibles:</h3>
+<table BORDER=0 WIDTH=50%  cellpadding=10 CELLSPACING=0 align="center">
+<tr>
+<td>
+<img src="gris.jpg" class="novedades1">
+</td>
+<td>
+<img src="beige.jpg" class="novedades2">
+</td>
+<td>
+<img src="negro.jpg" class="novedades2">
+</td>
+</tr>
+</table>
+</div>
+<br>
+
+<div class="comprar">
+<button onclick="myFunction()"><h3>Comprar</h3></button>
+</div>
+
+<p id="demo"></p>
+
+
+</div>
+
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Introduce tu nombre completo:", "ej. Miguel Mihura");
+  if (person == null || person == "") {
+    txt = "";
+  } else {
+    txt = "¡Enhorabuena! Tu pedido ha sido encargado. Time left: & getminutes() & ':' & getseconds()";
+	
+  }
+   var person = prompt("Por favor introduce tu dirección y código postal:", "ej. Avenida Alfonso X el Sabio, 10 , 03670");
+  if (person == null || person == "") {
+    txt = "";
+  } else {
+    txt = "¡Enhorabuena! Tu pedido ha sido encargado. Time left: & getminutes() & ':' & getseconds()";
+	
+  }
+  var person = prompt("Por favor introduce la información de la tarjeta de pago :", "ej. 0000000");
+  if (person == null || person == "") {
+    txt = "";
+  } else {
+    txt = "¡Enhorabuena! Tu pedido ha sido encargado. " ;
+	
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+
+        var mins = 14400; 
+  
+        
+        var secs = mins * 60; 
+  
+        
+        function countdown() { 
+            setTimeout('Decrement()', 60); 
+        } 
+  
+        
+        function Decrement() { 
+            if (document.getElementById) { 
+                minutes = document.getElementById("minutes"); 
+                seconds = document.getElementById("seconds"); 
+  
+               
+                if (seconds < 59) { 
+                    seconds.value = secs; 
+                } 
+  
+                
+                else { 
+                    minutes.value = getminutes(); 
+                    seconds.value = getseconds(); 
+                } 
+                
+                if (mins < 1) { 
+                    minutes.style.color = "red"; 
+                    seconds.style.color = "red"; 
+                } 
+                
+                if (mins < 0) { 
+                    alert('time up'); 
+                    minutes.value = 0; 
+                    seconds.value = 0; 
+                } 
+                
+                else { 
+                    secs--; 
+                    setTimeout('Decrement()', 1000); 
+                } 
+            } 
+        } 
+  
+        function getminutes() { 
+           
+            mins = Math.floor(secs / 60); 
+            return mins; 
+        } 
+  
+        function getseconds() { 
+            
+            return secs - Math.round(mins * 60); 
+        } 
+</script>
+ 
+   
+	
+</td>
+</tr>
+</table>
+<br>
+<br>
+
+<div class="center">
+  <div class="pagination">
+  <a href="camiseta11.html">&laquo;</a>
+  <a href="camiseta11.html" >1</a>
+  <a href="camiseta11dos.html" class="active">2</a>
+  <a href="">&raquo;</a>
+  </div>
+</div>
+  
+</body>
+</html>
